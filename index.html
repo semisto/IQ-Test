@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>IQ Test</title>
+</head>
+
+<body>
+	<!-- Navigation bar -->
+	<header class="header">
+		<!-- Logo -->
+		<a href="#" class="logo"></a>
+
+		<!-- Hamburger icon -->
+		<input class="side-menu" type="checkbox" id="side-menu" />
+		<label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+		<span class="heading hide">Тест на определение iq</span>
+		<!-- <img src="img/rain_bk3.png" alt="brain" class="small-brain hide"> -->
+		<!-- Menu -->
+		<nav class="nav">
+			<ul class="menu">
+				<li><a href="index.html">ГЛАВНАЯ</a></li>
+				<li><a href="#description">ИНФОРМАЦИЯ О ТЕСТЕ</a> </li>
+				<li><a class="js-startTest">ПРОЙТИ ТЕСТ</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- Main content -->
+	<main>
+		<!-- Main page -->
+		<div class="js-wrapper">
+			<article class="test">
+				<h3 class="test__h3">Пройдите точный и быстрый</h3>
+				<h2 class="test__iq">Тест на определение IQ</h2>
+				<img src="img/rain_bk3.png" alt="brain" class="test__brain">
+				<button class="start__button js-startTest">Пройти тест</button>
+				<p class="test__desc1">И получите рекомендации по развитию своего интеллекта</p>
+				<p class="test__desc2">и улучшения финансового благосостояния и личной жизни</p>
+				<a href="#description" id="description" class="test__detail">Подробнее</a>
+			</article>
+			<article class="description">
+				<p class="description__text">Профессиональный IQ-тест позволяет не только определить коэффициент вашего
+					интеллекта,</p>
+				<p class="description__text2">но и выработать список рекомендаций для повышения этого показателя.</p>
+			</article>
+			<article class="conviction">
+				<p class="conviction__desc">Также по результатам теста
+					<span class="conviction__bold">вы получите </span>подробные <span class="conviction__bold">советы
+					</span>по
+					определению наиболее перспективной <span class="conviction__bold">для вашего типа <span
+							class="conviction__small"></span>интеллекта сферы деятельности, </span>которая принесет вам
+					скорейший
+					финансовый результат.
+				</p>
+				<img src="img/brain-skills.svg" alt="brain skills" class="conviction__img">
+				<button class="start__button button-border js-startTest">Пойти тест</button>
+			</article>
+			<article class="timing">
+				<p class="timing__text">Прохождение теста займёт у вас не более <span class="timing__yellow">12 минут,
+					</span>а
+					его результаты вы сможете <span class="timing__yellow">использовать всю жизнь.</span></p>
+				<p class="timing__hype">Профессиональная интерпретация и детально проработанные рекомендации позволят вам
+					качественно изменить все аспекты своей
+					жизни: от финансового до любовного.</p>
+				<button class="start__button button-transparent js-startTest">Пойти тест</button>
+				<p class="timing__copyright"><span class="timing__sign">© </span> 2019</p>
+			</article>
+		</div>
+		<!-- IQ Page -->
+		<article class="testpage hide">
+			<!-- Loading bar -->
+			<div class="completion">
+				<div class="completion__readiness"></div>
+			</div>
+			<!-- Question 1 -->
+			<div class="testpage__question">
+				<h3 class="testpage__head">Ваш пол:</h3>
+				<div class="testpage__quiz">
+					<label for="q1" class="testpage__text">Мужчина</label>
+					<input type="radio" id="q1" class="testpage__point" value="Мужчина" name="sex">
+					<label for="q2" class="testpage__text">Женщина</label>
+					<input type="radio" id="q2" class="testpage__point" value="Женщина" name="sex">
+					<button class="testpage__button">далее</button>
+				</div>
+			</div>
+			<!-- Question 2 -->
+			<div class="testpage__question hide">
+				<h3 class="testpage__head head-second">Укажите ваш возраст:</h3>
+				<div class="testpage__quiz">
+					<label for="q3" class="testpage__text">До 18</label>
+					<input id="q3" type="radio" class="testpage__point" value="18" name="age">
+					<label for="q4" class="testpage__text">От 18 до 28</label>
+					<input id="q4" type="radio" class="testpage__point" value="18-28" name="age">
+					<label for="q5" class="testpage__text">От 29 до 35</label>
+					<input id="q5" type="radio" class="testpage__point" value="28-35" name="age">
+					<label for="q6" class="testpage__text">От 36</label>
+					<input id="q6" type="radio" class="testpage__point" value="36" name="age">
+					<button class="testpage__button">далее</button>
+				</div>
+			</div>
+			<!-- Question 3 -->
+			<div class="testpage__question hide">
+				<h3 class="testpage__head head-third">Выберете лишнее:</h3>
+				<div class="testpage__quiz">
+					<label for="q7" class="testpage__text">Дом</label>
+					<input id="q7" type="radio" class="testpage__point" value="Дом" name="irrelevant">
+					<label for="q8" class="testpage__text">Шалаш</label>
+					<input id="q8" type="radio" class="testpage__point" value="Шалаш" name="irrelevant">
+					<label for="q9" class="testpage__text">Бунгало</label>
+					<input id="q9" type="radio" class="testpage__point" value="Бунгало" name="irrelevant">
+					<label for="q10" class="testpage__text">Скамейка</label>
+					<input id="q10" type="radio" class="testpage__point" value="Скамейка" name="irrelevant">
+					<label for="q11" class="testpage__text">Хижина</label>
+					<input id="q11" type="radio" class="testpage__point" value="Хижина" name="irrelevant">
+					<button class="testpage__button">далее</button>
+				</div>
+			</div>
+			<!-- Question 4 -->
+			<div class="testpage__question hide">
+				<h3 class="testpage__head head-third">Выберете лишнее:</h3>
+				<div class="testpage__quiz">
+					<label for="q12" class="testpage__text">Дом</label>
+					<input id="q12" type="radio" class="testpage__point" value="Дом" name="irrelevant2">
+					<label for="q13" class="testpage__text">Шалаш</label>
+					<input id="q13" type="radio" class="testpage__point" value="Шалаш" name="irrelevant2">
+					<label for="q14" class="testpage__text">Бунгало</label>
+					<input id="q14" type="radio" class="testpage__point" value="Бунгало" name="irrelevant2">
+					<label for="q15" class="testpage__text">Скамейка</label>
+					<input id="q15" type="radio" class="testpage__point" value="Скамейка" name="irrelevant2">
+					<label for="q16" class="testpage__text">Хижина</label>
+					<input id="q16" type="radio" class="testpage__point" value="Хижина" name="irrelevant2">
+					<button class="testpage__button">далее</button>
+				</div>
+			</div>
+			<!-- Question 5 -->
+			<div class="testpage__question hide">
+				<h3 class="testpage__head head-fourth">Продолжите числовой ряд:<br>18 20 24 32</h3>
+				<div class="testpage__quiz">
+					<label for="q17" class="testpage__text">62</label>
+					<input id="q17" type="radio" class="testpage__point" value="62" name="row">
+					<label for="q18" class="testpage__text">48</label>
+					<input id="q18" type="radio" class="testpage__point" value="48" name="row">
+					<label for="q19" class="testpage__text">74</label>
+					<input id="q19" type="radio" class="testpage__point" value="74" name="row">
+					<label for="q20" class="testpage__text">57</label>
+					<input id="q20" type="radio" class="testpage__point" value="57" name="row">
+					<label for="q21" class="testpage__text">60</label>
+					<input id="q21" type="radio" class="testpage__point" value="60" name="row">
+					<label for="q22" class="testpage__text">77</label>
+					<input id="q22" type="radio" class="testpage__point" value="77" name="row">
+					<button class="testpage__button">далее</button>
+				</div>
+			</div>
+			<!-- Question 6 -->
+			<div class="testpage__question hide">
+				<h3 class="testpage__head head-fifth">Выберите цвет, который сейчас наиболее Вам приятен:</h3>
+				<div class="testpage__quiz">
+					<input type="radio" class="testpage__point" value="серый" name="color">
+					<input type="radio" class="testpage__point" value="синий" name="color">
+					<input type="radio" class="testpage__point" value="зеленый" name="color">
+					<input type="radio" class="testpage__point" value="красный" name="color">
+					<input type="radio" class="testpage__point" value="желтый" name="color">
+					<input type="radio" class="testpage__point" value="коричневый" name="color">
+					<input type="radio" class="testpage__point" value="черный" name="color">
+					<input type="radio" class="testpage__point" value="пурпурный" name="color">
+					<input type="radio" class="testpage__point" value="бирюзовый" name="color">
+					<button class="testpage__button">далее</button>
+				</div>
+			</div>
+			<!-- Question 7 -->
+			<div class="testpage__question hide">
+				<h3 class="testpage__head head-fifth head-sixth">Отдохните пару секунд, еще раз Выберите цвет, который
+					сейчас наиболее
+					Вам приятен:</h3>
+				<div class="testpage__quiz">
+					<input type="radio" class="testpage__point" value="серый" name="color2">
+					<input type="radio" class="testpage__point" value="бирюзовый" name="color2">
+					<input type="radio" class="testpage__point" value="коричневый" name="color2">
+					<input type="radio" class="testpage__point" value="зеленый" name="color2">
+					<input type="radio" class="testpage__point" value="черный" name="color2">
+					<input type="radio" class="testpage__point" value="красный" name="color2">
+					<input type="radio" class="testpage__point" value="пурпурный" name="color2">
+					<input type="radio" class="testpage__point" value="желтый" name="color2">
+					<input type="radio" class="testpage__point" value="синий" name="color2">
+					<button class="testpage__button">далее</button>
+				</div>
+			</div>
+			<!-- Question 8 -->
+			<div class="testpage__question hide">
+				<h3 class="testpage__head head-fourth head-seventh">Какой из городов лишний?</h3>
+				<div class="testpage__quiz">
+					<label for="q23" class="testpage__text">Вашингтон</label>
+					<input id="q23" type="radio" class="testpage__point" value="Вашингтон" name="city">
+					<label for="q24" class="testpage__text">Лондон</label>
+					<input id="q24" type="radio" class="testpage__point" value="Лондон" name="city">
+					<label for="q25" class="testpage__text">Париж</label>
+					<input id="q25" type="radio" class="testpage__point" value="Париж" name="city">
+					<label for="q26" class="testpage__text">Нью-Йорк</label>
+					<input id="q26" type="radio" class="testpage__point" value="Нью-Йорк" name="city">
+					<label for="q27" class="testpage__text">Москва</label>
+					<input id="q27" type="radio" class="testpage__point" value="Москва" name="city">
+					<label for="q28" class="testpage__text">Оттава</label>
+					<input id="q28" type="radio" class="testpage__point" value="Оттава" name="city">
+					<button class="testpage__button">далее</button>
+				</div>
+			</div>
+			<!-- Question 9 -->
+			<div class="testpage__question hide">
+				<h3 class="testpage__head head-eighth">Выберите правильную фигуру из четырёх пронумерованных.</h3>
+				<img src="img/signs.svg" alt="signs" class="testpage__signs">
+				<div class="testpage__quiz">
+					<input type="radio" class="testpage__point" value="1" name="signs">
+					<input type="radio" class="testpage__point" value="2" name="signs">
+					<input type="radio" class="testpage__point" value="3" name="signs">
+					<input type="radio" class="testpage__point" value="4" name="signs">
+					<button class="testpage__button">далее</button>
+				</div>
+			</div>
+			<!-- Question 10 -->
+			<div class="testpage__question hide">
+				<h3 class="testpage__head head-ninth">Вам привычнее и важнее:</h3>
+				<div class="testpage__quiz">
+					<label for="q29" class="testpage__text">Наслаждаться каждой минутой проведенного времени</label>
+					<input id="q29" type="radio" class="testpage__point" value="наслаждаться" name="important">
+					<label for="q30" class="testpage__text">Быть устремленными мыслями в будущее</label>
+					<input id="q30" type="radio" class="testpage__point" value="думать" name="important">
+					<label for="q31" class="testpage__text">Учитывать в ежедневной практике прошлый опыт</label>
+					<input id="q31" type="radio" class="testpage__point" value="учитывать" name="important">
+					<button class="testpage__button">далее</button>
+				</div>
+			</div>
+			<!-- Question 11 -->
+			<div class="testpage__question hide">
+				<h3 class="testpage__head head-tenth">Какое определение, по-Вашему, больше подходит к этому геометрическому
+					изображению:</h3>
+				<img src="img/figure.svg" alt="figure" class="testpage__figure">
+				<div class="testpage__quiz">
+					<label for="q32" class="testpage__text">Оно остроконечное</label>
+					<input id="q32" type="radio" class="testpage__point" value="остроконечное" name="geometry">
+					<label for="q33" class="testpage__text">Оно устойчиво</label>
+					<input id="q33" type="radio" class="testpage__point" value="устойчиво" name="geometry">
+					<label for="q34" class="testpage__text">Оно-находится в состоянии равновесия</label>
+					<input id="q34" type="radio" class="testpage__point" value="равновесие" name="geometry">
+					<button class="testpage__button">далее</button>
+				</div>
+			</div>
+			<!-- Question 12 -->
+			<div class="testpage__question hide">
+				<h3 class="testpage__head head-eighth head-eleventh">Вставьте подходящее число</h3>
+				<img src="img/big_star.svg" alt="star" class="testpage__signs">
+				<div class="testpage__quiz">
+					<input type="radio" class="testpage__point" value="34" name="star">
+					<input type="radio" class="testpage__point" value="36" name="star">
+					<input type="radio" class="testpage__point" value="53" name="star">
+					<input type="radio" class="testpage__point" value="44" name="star">
+					<input type="radio" class="testpage__point" value="66" name="star">
+					<input type="radio" class="testpage__point" value="42" name="star">
+					<button class="testpage__button">далее</button>
+				</div>
+			</div>
+			<!-- Question 13 -->
+			<div class="testpage__question hide">
+				<h3 class="testpage__head head-eighth head-eleventh">Вставьте подходящее число</h3>
+				<img src="img/big_star.svg" alt="star" class="testpage__signs">
+				<div class="testpage__quiz">
+					<input type="radio" class="testpage__point" value="34" name="star2">
+					<input type="radio" class="testpage__point" value="36" name="star2">
+					<input type="radio" class="testpage__point" value="53" name="star2">
+					<input type="radio" class="testpage__point" value="44" name="star2">
+					<input type="radio" class="testpage__point" value="66" name="star2">
+					<input type="radio" class="testpage__point" value="42" name="star2">
+					<button class="testpage__button">далее</button>
+				</div>
+			</div>
+			<!-- Spinner page -->
+			<div class="testpage__question hide">
+				<h3 class="testpage__processing">Обработка результатов</h3>
+				<img src="img/spinner.svg" class="testpage__spinner">
+				<p class="testpage__thinking">Определение стиля мышления. <span class="testpage__dot"></span></p>
+			</div>
+		</article>
+		<!-- Result page -->
+		<div class="testpage__result hide">
+			<h2 class="testpage__head2">Ваш результат рассчитан:</h2>
+			<p class="testpage__points"><a href="" class="testpage__link">Вы относитесь к 3%</a> респондентов, чей
+				уровень интеллекта более чем на 15 пунктов отличается от среднего в большую или меньшую сторону!</p>
+			<h2 class="testpage__appeal">Скорее получите свой результат!</h2>
+			<p class="testpage__message">В целях защиты персональных
+				данных результат теста, их подробная интерпретация и рекомендации доступны в виде голосового сообщения по
+				звонку с
+				вашего мобильного телефона</p>
+			<p class="testpage__hurryup">Звоните скорее, запись доступна всего</p>
+			<p class="testpage__minutes"><span class="testpage__timer">10:00</span> минут</p>
+			<button class="testpage__call">Позвонить и послушать результат</button>
+			<div class="testpage__results"></div>
+			<footer class="testpage__conditions">TERMENI SI CONDITII: ACESTA ESTE UN SERVICIU DE DIVERTISMENT. PRIN
+				FOLOSIREA LUI DECLARATI CA AVETI 18 ANI IMPLINITI,</footer>
+		</div>
+	</main>
+	<script src="script.js"></script>
+</body>
+
+</html>
